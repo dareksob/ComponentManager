@@ -2,10 +2,11 @@
   "name": "componentmanager",
   "version": "1.0.0",
   "description": "Manage your enviroment nodes",
-  "main": "src/ComponentMananger.js",
+  "main": "src/ComponentManager.js",
+  "files": [
+    "src/ComponentManager.js"
+  ],
   "scripts": {
-    "test": "karma start --single-run",
-    "watch": "karma start",
     "build": "gulp build"
   },
   "repository": {
