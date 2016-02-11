@@ -1,0 +1,16 @@
+# EditorConfig @see http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# common file styles
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+insert_final_newline = true
+indent_size = 2
+
+# Set default charset for js and ts
+[*.{js,ts}]
+charset = utf-8

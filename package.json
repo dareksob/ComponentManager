@@ -1,0 +1,33 @@
+{
+  "name": "componentmanager",
+  "version": "1.0.0",
+  "description": "Manage your enviroment nodes",
+  "main": "src/ComponentMananger.js",
+  "scripts": {
+    "test": "karma start --single-run",
+    "watch": "karma start",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dareksob/ComponentManager.git"
+  },
+  "keywords": [
+    "manager",
+    "component",
+    "module",
+    "ecmascript",
+    "javascript"
+  ],
+  "author": "Darius Sobczak <mail@dsobczak.de>",
+  "bugs": {
+    "url": "https://github.com/dareksob/ComponentManager/issues"
+  },
+  "homepage": "https://github.com/dareksob/ComponentManager#readme",
+  "devDependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-traceur": "^0.17.2",
+    "gulp-uglify": "^1.5.2"
+  }
+}

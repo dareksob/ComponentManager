@@ -1,0 +1,13 @@
+{
+  "name": "componentmanager",
+  "version": "1.0.0",
+  "description": "Manage your enviroment nodes",
+  "main": "src/ComponentMananger.js",
+  "authors": [
+    "Darius Sobczak <mail@dsobczak.de>"
+  ],
+  "moduleType": [],
+  "ignore": [
+    "node_modules"
+  ]
+}
