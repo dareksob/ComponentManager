@@ -11,6 +11,8 @@ const setting = {
   dest: 'dest'
 };
 
+gulp.task('default', ['build']);
+
 // all types of scripts
 gulp.task('build', () => {
 
@@ -33,8 +35,6 @@ gulp.task('build', () => {
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(setting.dest))
-
-
 });
 
 const helper = {
