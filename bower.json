@@ -1,6 +1,6 @@
 {
   "name": "componentmanager",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Manage your enviroment nodes",
   "main": "src/ComponentMananger.js",
   "authors": [

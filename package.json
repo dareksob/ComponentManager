@@ -1,6 +1,6 @@
 {
   "name": "componentmanager",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Manage your enviroment nodes",
   "main": "src/ComponentManager.js",
   "files": [
@@ -30,5 +30,8 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-traceur": "^0.17.2",
     "gulp-uglify": "^1.5.2"
+  },
+  "jspm": {
+    "format": "es6"
   }
 }
