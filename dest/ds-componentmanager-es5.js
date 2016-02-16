@@ -8,6 +8,16 @@ var ComponentManager = function() {
     this.observers = {};
   }
   return ($traceurRuntime.createClass)(ComponentManager, {
+    setup: function(setting) {
+      var $__2 = this;
+      var keys = Object.keys(setting);
+      keys.forEach(function(property) {
+        if (typeof $__2[property] === 'string') {
+          $__2[property] = setting[property];
+        }
+      });
+      return this;
+    },
     on: function(eventName, callback) {
       if (!this.observers[eventName]) {
         this.observers[eventName] = [];
@@ -21,16 +31,6 @@ var ComponentManager = function() {
           callback(payload);
         });
       }
-      return this;
-    },
-    setup: function(setting) {
-      var $__2 = this;
-      var keys = Object.keys(setting);
-      keys.forEach(function(property) {
-        if ($__2.hasOwnProperty(property) && typeof $__2[property] === 'function') {
-          $__2[property] = setting[property];
-        }
-      });
       return this;
     },
     getComponentNodes: function(root) {

@@ -16,6 +16,23 @@ class ComponentManager {
   }
 
   /**
+   * setup manager by map
+   *
+   * @param {object} setting key value map
+   * @returns {ComponentManager}
+   */
+  setup(setting) {
+    const keys = Object.keys(setting);
+    keys.forEach((property) => {
+      if (typeof this[property] === 'string') {
+        this[property] = setting[property];
+      }
+    });
+
+    return this;
+  }
+
+  /**
    * listener registration
    *
    * @param eventName
@@ -44,23 +61,6 @@ class ComponentManager {
         callback(payload);
       });
     }
-
-    return this;
-  }
-
-  /**
-   * setup manager by map
-   *
-   * @param setting
-   * @returns {ComponentManager}
-   */
-  setup(setting) {
-    const keys = Object.keys(setting);
-    keys.forEach((property) => {
-      if (this.hasOwnProperty(property) && typeof this[property] === 'function') {
-        this[property] = setting[property];
-      }
-    });
 
     return this;
   }
