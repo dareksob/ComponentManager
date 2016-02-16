@@ -1,12 +1,6 @@
 # ComponentManager
-Manage your enviroment nodes to inizalize.
-ComponentManager is written in EcmaScript6 standard, your can use es5 version.
-
-## info for JSPM
-Use the github implementation
-jspm install github:dareksob/componentmanager
-
-npm not work at the moment
+Manage your dom nodes to initialize.
+ComponentManager is written in EcmaScript6, alternative your can use es5 version with bower.
 
 ## minimum system enviroment
 - Promise API
